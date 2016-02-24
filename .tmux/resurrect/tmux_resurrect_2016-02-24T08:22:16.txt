@@ -1,0 +1,3 @@
+pane	0	1	:~/Sites/til	1	:*	1	:/Users/douglas/Sites/til	1	zsh	:
+window	0	1	1	:*	b29d,204x51,0,0,0
+state	0	

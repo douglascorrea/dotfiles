@@ -1,0 +1,9 @@
+pane	awesomelists	1	:code	0	:	1	:/Users/douglas/Sites/awesomelists	1	vim	:vim .
+pane	awesomelists	2	:servers	0	:-	1	:/Users/douglas/Sites/awesomelists	0	zsh	:
+pane	awesomelists	2	:servers	0	:-	2	:/Users/douglas/Sites/awesomelists	1	zsh	:
+pane	awesomelists	3	:git-npm	1	:*	1	:/Users/douglas/Sites/awesomelists	0	zsh	:
+pane	awesomelists	3	:git-npm	1	:*	2	:/Users/douglas/Sites/awesomelists	1	zsh	:
+window	awesomelists	1	0	:	c29d,204x55,0,0,0
+window	awesomelists	2	0	:-	7740,204x55,0,0{102x55,0,0,1,101x55,103,0,3}
+window	awesomelists	3	1	:*	f741,204x55,0,0{102x55,0,0,2,101x55,103,0,4}
+state	awesomelists	

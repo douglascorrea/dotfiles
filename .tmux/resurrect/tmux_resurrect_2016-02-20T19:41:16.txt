@@ -1,0 +1,4 @@
+pane	0	1	:zsh	1	:*	1	:/Users/douglas/Sites/appdecora	0	mysqldump	:mysqldump -p -h decorame.c1v156nuy0td.us-east-1.rds.amazonaws.com -u decora_app -P 3399 --add-drop-table decoradb
+pane	0	1	:zsh	1	:*	2	:/Users/douglas/Sites/appdecora	1	zsh	:
+window	0	1	1	:*	773e,204x55,0,0{102x55,0,0,0,101x55,103,0,1}
+state	0	
