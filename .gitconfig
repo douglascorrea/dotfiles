@@ -5,3 +5,7 @@
 	default = simple
 [core]
 	trustctime = false
+	preloadindex = true
+	fscache = true
+[gc]
+	auto = 256
