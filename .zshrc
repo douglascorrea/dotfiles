@@ -95,3 +95,4 @@ alias reloadzsh="source ~/.zshrc"
 alias git=git
 alias vimconfig="vim ~/.vimrc"
 alias csites="cd /c/Users/dsilvio/Sites"
+alias sqlplus="rlwrap /c/Oracle/product/11.2.0/client_1/bin/sqlplus"

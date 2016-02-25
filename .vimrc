@@ -5,6 +5,9 @@ filetype plugin indent on
 set autowrite     " Automatically :write before running commands
 set showcmd       " display incomplete commands"
 
+" avoid backup files
+set nobackup
+
 "Line Numbers
 set number
 
