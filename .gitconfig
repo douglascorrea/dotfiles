@@ -3,3 +3,5 @@
 	name = Douglas Silvio Correa
 [push]
 	default = simple
+[core]
+	trustctime = false

@@ -1,11 +1,11 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/douglas/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="bullet-train"
+ZSH_THEME="babun"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -49,7 +49,7 @@ COMPLETION_WAITING_DOTS="false"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode zsh-256color history-substring-search)
+plugins=(git history-substring-search)
 
 # User configuration
 
@@ -78,24 +78,13 @@ export EDITOR='vim'
 BASE16_SHELL="$HOME/.config/base16-shell/base16-londontube.dark.sh"
 [[ -s $BASE16_SHELL  ]] && source $BASE16_SHELL
 
-# for NVM
-export NVM_DIR=~/.nvm
-   . $(brew --prefix nvm)/nvm.sh
-nvm use stable
 
 # rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-#Bullet Train Config
-export BULLETTRAIN_STATUS_EXIT_SHOW=true
-export BULLETTRAIN_CONTEXT_SHOW=false
-export BULLETTRAIN_NVM_SHOW=true
-export BULLETTRAIN_DIR_EXTENDED=1 # Extended path (0=short path, 1=medium path, 2=complete path, everything else=medium path)
-export BULLETTRAIN_GIT_COLORIZE_DIRTY=false
-export BULLETTRAIN_GIT_UNTRACKED="%{$fg[magenta]%}✭"%{$reset_color%}
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
@@ -103,5 +92,6 @@ export BULLETTRAIN_GIT_UNTRACKED="%{$fg[magenta]%}✭"%{$reset_color%}
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias reloadzsh="source ~/.zshrc"
+alias git=git
 alias vimconfig="vim ~/.vimrc"
-alias git=hub
+alias csites="cd /c/Users/dsilvio/Sites"
