@@ -1,4 +1,0 @@
-pane	0	1	:vim	1	:*	1	:/Users/douglas	1	vim	:vim /Users/douglas/.vimrc
-pane	0	1	:vim	1	:*	2	:/Users/douglas/.vim/bundle/vim-sensible/plugin	0	vim	:vim sensible.vim
-window	0	1	1	:*	773e,204x55,0,0{102x55,0,0,0,101x55,103,0,1}
-state	0	

@@ -1,4 +1,0 @@
-pane	0	1	:..-data-cleanup	1	:*	1	:/Users/douglas/Sites/charter-data-cleanup	1	vim	:vim data_cleanup_process_assets
-pane	0	1	:..-data-cleanup	1	:*	2	:/Users/douglas/Sites/charter-data-cleanup	0	zsh	:
-window	0	1	1	:*	391e,204x51,0,0[204x42,0,0,0,204x8,0,43,3]
-state	0	

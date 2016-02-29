@@ -1,3 +1,0 @@
-pane	0	1	:vim	1	:*M	1	:/Users/douglas/Sites	1	vim	:vim /Users/douglas/Downloads/meeting notes.txt
-window	0	1	1	:*M	b29d,204x51,0,0,0
-state	0	

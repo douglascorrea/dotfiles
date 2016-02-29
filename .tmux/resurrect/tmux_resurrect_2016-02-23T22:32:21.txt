@@ -1,4 +1,0 @@
-pane	0	1	:~/.vim/bundle	1	:*	1	:/Users/douglas/Sites/charter-data-cleanup	1	vim	:vim data_cleanup_assets.sh
-pane	0	1	:~/.vim/bundle	1	:*	2	:/Users/douglas/.vim/bundle	0	zsh	:
-window	0	1	1	:*	b1d6,204x51,0,0[204x30,0,0,0,204x20,0,31,5]
-state	0	

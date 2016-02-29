@@ -1,3 +1,0 @@
-pane	0	1	:vim	1	:*	1	:/Users/douglas	1	vim	:vim /Users/douglas/.tmux.conf
-window	0	1	1	:*	c29d,204x55,0,0,0
-state	0	

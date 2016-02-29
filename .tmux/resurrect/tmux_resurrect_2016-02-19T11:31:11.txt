@@ -1,4 +1,0 @@
-pane	0	1	:vim	1	:*	1	:/Users/douglas/Sites/awesomelists	0	vim	:vim .
-pane	0	1	:vim	1	:*	2	:/Users/douglas	1	vim	:vim /Users/douglas/.vimrc
-window	0	1	1	:*	bd42,204x55,0,0{80x55,0,0,0,123x55,81,0,4}
-state	0	

@@ -1,4 +1,0 @@
-pane	0	1	:man	1	:*	1	:/Users/douglas	0	zsh	:
-pane	0	1	:man	1	:*	2	:/Users/douglas/Sites/dotfiles/.vim/bundle	1	man	:man hub
-window	0	1	1	:*	5ccc,204x51,0,0{101x51,0,0,0,102x51,102,0,1}
-state	0	
