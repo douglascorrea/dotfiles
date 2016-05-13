@@ -1,0 +1,92 @@
+[x] mouse one clickk
+[x] tap tree fingers
+[x] set the menu dark
+[x] size of dock
+[x] finder sidebar
+[x] terminal solarized
+[x] bettersnaptool
+[x] tweetbot
+[x] configure bettersnaptool
+[x] screenflow
+[x] The Unarchiver
+[x] create Sites folder
+[x] xcode
+[x] function f1, f2, etc keys set
+[x] homebrew
+[x] homebrew cask install
+[x] git
+[] git config --global user.email "me@douglascorrea.io"
+[] git config --global user.name "Douglas Silvio Correa"
+[x] ohmyzsh
+[x] wget
+[x] export TERM="xterm-256color"
+[x] install powerline fonts
+[x] install homebrew fonts
+[x] install Input Mono font
+[x] install monoid
+[x] terminal font robot mono medium powerlinke
+[x] bullet train ohmyzsh theme
+[x] bartender
+[x] configure bartender
+[x] istatmenu
+[x] configure istat menu
+[x] bitbar
+[x] latest vim
+[x] pathogen
+[x] sensible-vim
+[x] nerdtree
+[x] vim-airline
+[x] base16-shell
+[x] base16-londontub terminal theme
+[x] base16-vimm
+[x] vim-polyglot
+[x] vim-multiple-cursors
+[x] screenfetch
+[] cisco webex
+[] tmux
+[] maglev
+[] multirust
+[] dropbox
+[x] gotomeeting 
+[x] skype
+[x] set skype compact
+[x] set skype to not auto-correct
+[x] firefox
+[x] chrome
+[x] cloudapp
+[x] slack
+[] sketch
+[x] skitch
+[x] evernote
+[] office
+[x] nvm
+[x] create .nvm
+[] rbenv
+[] python
+[] hpython3
+[] virtualenv
+[] virtualenvwrapper
+[] postgresql
+[] brew install services  for postgresql
+[x] sublimetext
+[x] jetbrains idea
+[] eclipse
+[] eclim
+[] spotify
+[] caffeine
+[] ctags
+[] heroku
+[] npm install grunt-cli gulp bower yo
+[] java
+[] jenv
+[] zsh-syntax-highlight
+[] npm install -g tldr
+[] install rbenv - rbenv install 2.3.0 - rbenv global 2.3.0
+[] install vmware
+[] install http://download-c.huawei.com/download/downloadCenter?downloadId=55243&version=175486&siteCode=br
+[] git@github.com:lysyi3m/osx-terminal-themes.git
+[] hub
+[] rescuetime
+[] shellcheck
+[] grip
+[] history-substring-search
