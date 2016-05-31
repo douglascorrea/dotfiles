@@ -1,6 +1,7 @@
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
+highlight Pmenu ctermfg=2 ctermbg=3 guifg=#ffffff guibg=#000000
 
 set autowrite     " Automatically :write before running commands
 set showcmd       " display incomplete commands"

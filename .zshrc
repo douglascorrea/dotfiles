@@ -49,7 +49,7 @@ COMPLETION_WAITING_DOTS="false"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode zsh-256color history-substring-search)
+plugins=(git vi-mode zsh-256color osx history-substring-search)
 
 # User configuration
 
@@ -108,3 +108,14 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 alias reloadzsh="source ~/.zshrc"
 alias vimconfig="vim ~/.vimrc"
 alias git=hub
+
+
+# tabtab source for yo package
+# uninstall by removing these lines or running `tabtab uninstall yo`
+[[ -f /Users/douglas/.nvm/versions/node/v6.1.0/lib/node_modules/yo/node_modules/tabtab/.completions/yo.zsh ]] && . /Users/douglas/.nvm/versions/node/v6.1.0/lib/node_modules/yo/node_modules/tabtab/.completions/yo.zsh
+
+export PATH="$PATH:$(brew --prefix coreutils)/libexec/gnubin"
+
+# jenv
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
