@@ -119,3 +119,4 @@ export PATH="$PATH:$(brew --prefix coreutils)/libexec/gnubin"
 # jenv
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
+export PATH="/usr/local/sbin:$PATH"
