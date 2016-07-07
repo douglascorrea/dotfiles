@@ -30,8 +30,8 @@ brew cask install selfcontrol
 brew install heroku
 brew cask install virtualbox
 brew cask install spotify
-brew cask install sublime-text3
-brew cask install iterm2
+#brew cask install sublime-text3
+#brew cask install iterm2
 brew cask install google-chrome
 brew cask install google-chrome-canary
 brew cask install vlc
@@ -52,7 +52,7 @@ brew install wget
 brew cask install bartender
 brew cask install istat-menus
 brew cask install bitbar
-brew install tmux
+#brew install tmux
 brew cask install skype
 brew cask install sketch
 brew cask install skitch
@@ -96,7 +96,7 @@ brew install p7zip
 brew install pigz
 brew install pv
 brew install rename
-brew install rhino
+# brew install rhino
 brew install speedtest_cli
 brew install ssh-copy-id
 brew install testssl
@@ -109,7 +109,7 @@ brew install webkit2png
 brew install zopfli
 brew install the_silver_searcher
 brew install fzf
-rm -rf ~/.vimrc
-ln -s ~/Sites/dotfiles/.vimrc ~/.vimrc
+#rm -rf ~/.vimrc
+#ln -s ~/Sites/dotfiles/.vimrc ~/.vimrc
 brew cleanup
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
