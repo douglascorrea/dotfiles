@@ -49,7 +49,7 @@ COMPLETION_WAITING_DOTS="false"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode zsh-256color osx history-substring-search)
+plugins=(git zsh-256color osx history-substring-search)
 
 # User configuration
 
@@ -84,7 +84,7 @@ BASE16_SHELL="$HOME/.config/base16-shell/base16-londontube.dark.sh"
 # for NVM
 export NVM_DIR=~/.nvm
    . $(brew --prefix nvm)/nvm.sh
-nvm use stable
+#nvm use stable
 
 # rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
@@ -112,7 +112,7 @@ alias git=hub
 
 # tabtab source for yo package
 # uninstall by removing these lines or running `tabtab uninstall yo`
-[[ -f /Users/douglas/.nvm/versions/node/v6.1.0/lib/node_modules/yo/node_modules/tabtab/.completions/yo.zsh ]] && . /Users/douglas/.nvm/versions/node/v6.1.0/lib/node_modules/yo/node_modules/tabtab/.completions/yo.zsh
+#[[ -f /Users/douglas/.nvm/versions/node/v6.1.0/lib/node_modules/yo/node_modules/tabtab/.completions/yo.zsh ]] && . /Users/douglas/.nvm/versions/node/v6.1.0/lib/node_modules/yo/node_modules/tabtab/.completions/yo.zsh
 
 export PATH="$PATH:$(brew --prefix coreutils)/libexec/gnubin"
 

@@ -74,7 +74,8 @@ brew install jenv
 brew cask install vmware-fusion
 brew cask install vmware-horizon-client
 brew cask install intellij-idea
-curl -sf https://raw.githubusercontent.com/brson/multirust/master/blastoff.sh | sh
+#curl -sf https://raw.githubusercontent.com/brson/multirust/master/blastoff.sh | sh
+curl https://sh.rustup.rs -sSf | sh
 brew install coreutils
 ln -s /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
 # Install some other useful utilities like `sponge`.
