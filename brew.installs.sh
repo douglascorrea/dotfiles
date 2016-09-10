@@ -71,7 +71,7 @@ mkdir ~/.nvm
 brew install postgres
 brew install mysql
 brew install jenv
-brew cask install vmware-fusion
+#brew cask install vmware-fusion
 brew cask install vmware-horizon-client
 brew cask install intellij-idea
 #curl -sf https://raw.githubusercontent.com/brson/multirust/master/blastoff.sh | sh
@@ -87,11 +87,12 @@ brew install gnu-sed --with-default-names
 # Install other useful binaries.
 brew install ack
 brew install dark-mode
+dark-mode --mode Dark
 #brew install exiv2
 brew install git
 brew install git-lfs
 brew install imagemagick --with-webp
-brew install lua
+#brew install lua
 brew install lynx
 brew install p7zip
 brew install pigz
@@ -101,9 +102,9 @@ brew install rename
 brew install speedtest_cli
 brew install ssh-copy-id
 brew install testssl
-brew install docker
-brew install docker-machine
-brew install docker-compose
+#brew install docker
+#brew install docker-machine
+#brew install docker-compose
 brew install tree
 brew install vbindiff
 brew install webkit2png
