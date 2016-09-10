@@ -265,7 +265,7 @@ you should place your code here."
   (setq spaceline-window-numbers-unicode nil)
   (global-hl-line-mode)
   (set-face-background hl-line-face "gray36")
-  (set-face-background col-highlight-face "gray36")
+  ;; (set-face-background col-highlight-face "gray36")
   (fci-mode)
 
   (defun indent-buffer ()
