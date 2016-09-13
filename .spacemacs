@@ -34,7 +34,6 @@ values."
      react
      markdown
      org
-     themes-megapack
      (shell :variables
             shell-default-height 30
             shell-default-position 'bottom
@@ -199,7 +198,7 @@ values."
    ;; If non nil the frame is maximized when Emacs starts up.
    ;; Takes effect only if `dotspacemacs-fullscreen-at-startup' is nil.
    ;; (default nil) (Emacs 24.4+ only)
-   dotspacemacs-maximized-at-startup t
+   dotspacemacs-maximized-at-startup nil
    ;; A value from the range (0..100), in increasing opacity, which describes
    ;; the transparency level of a frame when it's active or selected.
    ;; Transparency can be toggled through `toggle-transparency'. (default 90)
@@ -260,6 +259,10 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
+  ;; Font
+  (set-face-attribute 'default nil :family "Source Code Pro for Powerline")
+  (set-face-attribute 'default nil :height 150)
+  (set-face-attribute 'default nil :weight 'light)
   (setq powerline-height 22)
   (powerline-reset)
   (setq spaceline-window-numbers-unicode nil)

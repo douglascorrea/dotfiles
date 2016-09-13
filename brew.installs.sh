@@ -1,4 +1,5 @@
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew install git
 cd ~/Sites
 git clone git@github.com:douglascorrea/til.git
 git clone git@github.com:powerline/fonts.git
@@ -30,14 +31,14 @@ brew cask install selfcontrol
 brew install heroku
 brew cask install virtualbox
 brew cask install spotify
-#brew cask install sublime-text3
-#brew cask install iterm2
+brew cask install sublime-text3
+brew cask install iterm2
 brew cask install google-chrome
-brew cask install google-chrome-canary
+#brew cask install google-chrome-canary
 brew cask install vlc
-brew cask install rescuetime
+#brew cask install rescuetime
 brew cask install limechat
-brew install mercurial
+#brew install mercurial
 brew install hub
 # Install more recent versions of some OS X tools.
 brew install vim --override-system-vi
@@ -89,7 +90,6 @@ brew install ack
 brew install dark-mode
 dark-mode --mode Dark
 #brew install exiv2
-brew install git
 brew install git-lfs
 brew install imagemagick --with-webp
 #brew install lua
@@ -114,4 +114,4 @@ brew install fzf
 #rm -rf ~/.vimrc
 #ln -s ~/Sites/dotfiles/.vimrc ~/.vimrc
 brew cleanup
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+#sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
