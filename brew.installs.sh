@@ -59,7 +59,7 @@ brew cask install sketch
 brew cask install skitch
 brew cask install evernote
 brew cask install dropbox
-brew cask install microsoft-office
+#brew cask install microsoft-office
 brew cask install firefox
 brew install rbenv
 brew install python
