@@ -1,25 +1,25 @@
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install git
-cd ~/Sites
-git clone git@github.com:douglascorrea/til.git
-git clone git@github.com:powerline/fonts.git
-cd fonts
-./install.sh
-cd ..
-git clone git@github.com:ryanoasis/nerd-fonts.git
-cd nerd-fonts
-./install.sh
-cd ..
-brew tap caskroom/cask
-brew tap homebrew/versions
-brew tap caskroom/versions
-brew tap caskroom/fonts
-brew tap homebrew/services
+#/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+#brew install git
+#cd ~/Sites
+#git clone git@github.com:douglascorrea/til.git
+#git clone git@github.com:powerline/fonts.git
+#cd fonts
+#./install.sh
+#cd ..
+#git clone git@github.com:ryanoasis/nerd-fonts.git
+#cd nerd-fonts
+#./install.sh
+#cd ..
+#brew tap caskroom/cask
+#brew tap homebrew/versions
+#brew tap caskroom/versions
+#brew tap caskroom/fonts
+#brew tap homebrew/services
 # Install font tools.
-brew tap bramstein/webfonttools
-brew install cmake
-brew install mono
-brew install go
+#brew tap bramstein/webfonttools
+#brew install cmake
+#brew install mono
+#brew install go
 brew install sfnt2woff
 brew install sfnt2woff-zopfli
 brew install woff2
@@ -27,13 +27,13 @@ brew cask install skyfonts
 brew cask install font-input
 brew cask install font-monoid
 brew cask install kindle
-brew cask install selfcontrol
+#brew cask install selfcontrol
 brew install heroku
-brew cask install virtualbox
+#brew cask install virtualbox
 brew cask install spotify
-brew cask install sublime-text3
+brew cask install sublime-text
 brew cask install iterm2
-brew cask install google-chrome
+#brew cask install google-chrome
 #brew cask install google-chrome-canary
 brew cask install vlc
 #brew cask install rescuetime
@@ -45,7 +45,7 @@ brew install vim --override-system-vi
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
-brew install homebrew/php/php56 --with-gmp
+#brew install homebrew/php/php56 --with-gmp
 brew install screenfetch
 brew install shellcheck
 brew install ctags
@@ -61,7 +61,10 @@ brew cask install evernote
 brew cask install dropbox
 #brew cask install microsoft-office
 brew cask install firefox
-brew install rbenv
+#brew install rbenv
+brew install gpg
+#gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+#curl -sSL https://get.rvm.io | bash -s stable
 brew install python
 pip install --upgrade pip
 brew install python3
@@ -93,7 +96,7 @@ dark-mode --mode Dark
 brew install git-lfs
 brew install imagemagick --with-webp
 #brew install lua
-brew install lynx
+#brew install lynx
 brew install p7zip
 brew install pigz
 brew install pv
