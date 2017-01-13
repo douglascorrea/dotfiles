@@ -1,25 +1,25 @@
 #/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 #brew install git
-#cd ~/Sites
-#git clone git@github.com:douglascorrea/til.git
-#git clone git@github.com:powerline/fonts.git
-#cd fonts
-#./install.sh
-#cd ..
-#git clone git@github.com:ryanoasis/nerd-fonts.git
-#cd nerd-fonts
-#./install.sh
-#cd ..
-#brew tap caskroom/cask
-#brew tap homebrew/versions
-#brew tap caskroom/versions
-#brew tap caskroom/fonts
-#brew tap homebrew/services
+cd ~/Sites
+git clone git@github.com:douglascorrea/til.git
+git clone git@github.com:powerline/fonts.git
+cd fonts
+./install.sh
+cd ..
+git clone git@github.com:ryanoasis/nerd-fonts.git
+cd nerd-fonts
+./install.sh
+cd ..
+brew tap caskroom/cask
+brew tap homebrew/versions
+brew tap caskroom/versions
+brew tap caskroom/fonts
+brew tap homebrew/services
 # Install font tools.
-#brew tap bramstein/webfonttools
-#brew install cmake
-#brew install mono
-#brew install go
+brew tap bramstein/webfonttools
+brew install cmake
+brew install mono
+brew install go
 brew install sfnt2woff
 brew install sfnt2woff-zopfli
 brew install woff2
@@ -29,11 +29,11 @@ brew cask install font-monoid
 brew cask install kindle
 #brew cask install selfcontrol
 brew install heroku
-#brew cask install virtualbox
+brew cask install virtualbox
 brew cask install spotify
 brew cask install sublime-text
 brew cask install iterm2
-#brew cask install google-chrome
+brew cask install google-chrome
 #brew cask install google-chrome-canary
 brew cask install vlc
 #brew cask install rescuetime
@@ -53,7 +53,7 @@ brew install wget
 brew cask install bartender
 brew cask install istat-menus
 brew cask install bitbar
-#brew install tmux
+brew install tmux
 brew cask install skype
 brew cask install sketch
 brew cask install skitch
@@ -63,8 +63,8 @@ brew cask install dropbox
 brew cask install firefox
 #brew install rbenv
 brew install gpg
-#gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
-#curl -sSL https://get.rvm.io | bash -s stable
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+curl -sSL https://get.rvm.io | bash -s stable
 brew install python
 pip install --upgrade pip
 brew install python3
@@ -75,7 +75,7 @@ mkdir ~/.nvm
 brew install postgres
 brew install mysql
 brew install jenv
-#brew cask install vmware-fusion
+brew cask install vmware-fusion
 brew cask install vmware-horizon-client
 brew cask install intellij-idea
 #curl -sf https://raw.githubusercontent.com/brson/multirust/master/blastoff.sh | sh
@@ -92,11 +92,11 @@ brew install gnu-sed --with-default-names
 brew install ack
 brew install dark-mode
 dark-mode --mode Dark
-#brew install exiv2
+brew install exiv2
 brew install git-lfs
 brew install imagemagick --with-webp
-#brew install lua
-#brew install lynx
+brew install lua
+brew install lynx
 brew install p7zip
 brew install pigz
 brew install pv
@@ -116,5 +116,7 @@ brew install the_silver_searcher
 brew install fzf
 #rm -rf ~/.vimrc
 #ln -s ~/Sites/dotfiles/.vimrc ~/.vimrc
+brew install emacs --with-cocoa --without-gnutls --with-librsvg --with-imagemagick --HEAD --use-git-head
 brew cleanup
+brew linkapps
 #sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
