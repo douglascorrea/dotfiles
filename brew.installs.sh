@@ -1,15 +1,15 @@
 #/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 #brew install git
-cd ~/Sites
-git clone git@github.com:douglascorrea/til.git
-git clone git@github.com:powerline/fonts.git
-cd fonts
-./install.sh
-cd ..
-git clone git@github.com:ryanoasis/nerd-fonts.git
-cd nerd-fonts
-./install.sh
-cd ..
+#cd ~/Sites
+#git clone git@github.com:douglascorrea/til.git
+#git clone git@github.com:powerline/fonts.git
+#cd fonts
+#./install.sh
+#cd ..
+#git clone git@github.com:ryanoasis/nerd-fonts.git
+#cd nerd-fonts
+#./install.sh
+#cd ..
 brew tap caskroom/cask
 brew tap homebrew/versions
 brew tap caskroom/versions
@@ -18,22 +18,22 @@ brew tap homebrew/services
 # Install font tools.
 brew tap bramstein/webfonttools
 brew install cmake
-brew install mono
-brew install go
-brew install sfnt2woff
-brew install sfnt2woff-zopfli
-brew install woff2
-brew cask install skyfonts
-brew cask install font-input
-brew cask install font-monoid
-brew cask install kindle
+#brew install mono
+#brew install go
+#brew install sfnt2woff
+#brew install sfnt2woff-zopfli
+#brew install woff2
+#brew cask install skyfonts
+#brew cask install font-input
+#brew cask install font-monoid
+#brew cask install kindle
 #brew cask install selfcontrol
 brew install heroku
 brew cask install virtualbox
 brew cask install spotify
 brew cask install sublime-text
 brew cask install iterm2
-brew cask install google-chrome
+#brew cask install google-chrome
 #brew cask install google-chrome-canary
 brew cask install vlc
 #brew cask install rescuetime
@@ -75,11 +75,11 @@ mkdir ~/.nvm
 brew install postgres
 brew install mysql
 brew install jenv
-brew cask install vmware-fusion
-brew cask install vmware-horizon-client
-brew cask install intellij-idea
+#brew cask install vmware-fusion
+#brew cask install vmware-horizon-client
+#brew cask install intellij-idea
 #curl -sf https://raw.githubusercontent.com/brson/multirust/master/blastoff.sh | sh
-curl https://sh.rustup.rs -sSf | sh
+#curl https://sh.rustup.rs -sSf | sh
 brew install coreutils
 ln -s /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
 # Install some other useful utilities like `sponge`.
@@ -90,8 +90,8 @@ brew install findutils
 brew install gnu-sed --with-default-names
 # Install other useful binaries.
 brew install ack
-brew install dark-mode
-dark-mode --mode Dark
+#brew install dark-mode
+#dark-mode --mode Dark
 brew install exiv2
 brew install git-lfs
 brew install imagemagick --with-webp
@@ -102,9 +102,9 @@ brew install pigz
 brew install pv
 brew install rename
 # brew install rhino
-brew install speedtest_cli
+#brew install speedtest_cli
 brew install ssh-copy-id
-brew install testssl
+#brew install testssl
 #brew install docker
 #brew install docker-machine
 #brew install docker-compose
@@ -116,7 +116,7 @@ brew install the_silver_searcher
 brew install fzf
 #rm -rf ~/.vimrc
 #ln -s ~/Sites/dotfiles/.vimrc ~/.vimrc
-brew install emacs --with-cocoa --without-gnutls --with-librsvg --with-imagemagick --HEAD --use-git-head
+#brew install emacs --with-cocoa --without-gnutls --with-librsvg --with-imagemagick --HEAD --use-git-head
 brew cleanup
 brew linkapps
 #sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
