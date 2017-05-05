@@ -1,3 +1,4 @@
+set clipboard=unnamedplus
 nnoremap yy "+yy
 vnoremap y "+y
 
@@ -5,3 +6,9 @@ nnoremap p "+p
 vnoremap p "+p
 nnoremap P "+P
 vnoremap P "+P
+
+let mapleader = " "
+
+nnoremap <leader>fed :e /Users/douglas/.ideavimrc<CR>
+nnoremap <leader>feR :source /Users/douglas/.ideavimrc<CR>
+nnoremap <leader>sap :action FindModal<CR>
