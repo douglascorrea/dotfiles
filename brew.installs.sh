@@ -1,7 +1,7 @@
-#/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-#brew install git
-#cd ~/Sites
-#git clone git@github.com:douglascorrea/til.git
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew install git
+cd ~/Sites
+git clone git@github.com:douglascorrea/til.git
 #git clone git@github.com:powerline/fonts.git
 #cd fonts
 #./install.sh
@@ -26,14 +26,14 @@ brew install cmake
 #brew cask install skyfonts
 #brew cask install font-input
 #brew cask install font-monoid
-#brew cask install kindle
+brew cask install kindle
 #brew cask install selfcontrol
 brew install heroku
 brew cask install virtualbox
 brew cask install spotify
 brew cask install sublime-text
 brew cask install iterm2
-#brew cask install google-chrome
+brew cask install google-chrome
 #brew cask install google-chrome-canary
 brew cask install vlc
 #brew cask install rescuetime
@@ -75,9 +75,9 @@ mkdir ~/.nvm
 brew install postgres
 brew install mysql
 brew install jenv
-#brew cask install vmware-fusion
-#brew cask install vmware-horizon-client
-#brew cask install intellij-idea
+brew cask install vmware-fusion
+brew cask install vmware-horizon-client
+brew cask install intellij-idea
 #curl -sf https://raw.githubusercontent.com/brson/multirust/master/blastoff.sh | sh
 #curl https://sh.rustup.rs -sSf | sh
 brew install coreutils
@@ -114,9 +114,9 @@ brew install webkit2png
 brew install zopfli
 brew install the_silver_searcher
 brew install fzf
-#rm -rf ~/.vimrc
-#ln -s ~/Sites/dotfiles/.vimrc ~/.vimrc
-#brew install emacs --with-cocoa --without-gnutls --with-librsvg --with-imagemagick --HEAD --use-git-head
+rm -rf ~/.vimrc
+ln -s ~/Sites/dotfiles/.vimrc ~/.vimrc
+brew install emacs --with-cocoa --without-gnutls --with-librsvg --with-imagemagick --HEAD --use-git-head
 brew cleanup
 brew linkapps
-#sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"

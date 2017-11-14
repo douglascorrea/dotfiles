@@ -1,11 +1,20 @@
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/douglas/.oh-my-zsh
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-ZSH_THEME="bullet-train"
+# Set name of the theme to load. Optionally, if you set this to "random"
+# it'll load a random theme each time that oh-my-zsh is loaded.
+# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+ZSH_THEME="robbyrussell"
+
+# Set list of themes to load
+# Setting this variable when ZSH_THEME=random
+# cause zsh load theme from this variable instead of
+# looking in ~/.oh-my-zsh/themes/
+# An empty array have no effect
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -18,7 +27,7 @@ ZSH_THEME="bullet-train"
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
-export UPDATE_ZSH_DAYS=13
+# export UPDATE_ZSH_DAYS=13
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -30,7 +39,7 @@ export UPDATE_ZSH_DAYS=13
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-COMPLETION_WAITING_DOTS="false"
+# COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -49,21 +58,20 @@ COMPLETION_WAITING_DOTS="false"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-256color osx)
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
-
-source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-export EDITOR='vim'
+#   export EDITOR='vim'
 # else
 #   export EDITOR='mvim'
 # fi
@@ -72,30 +80,7 @@ export EDITOR='vim'
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
-
-# Virtualenv wrapper
-export WORKON_HOME=~/.envs
-
-# Base16 Shell
-BASE16_SHELL="$HOME/.config/base16-shell/base16-londontube.dark.sh"
-[[ -s $BASE16_SHELL  ]] && source $BASE16_SHELL
-
-# for NVM
-export NVM_DIR=~/.nvm
-   . $(brew --prefix nvm)/nvm.sh
-#nvm use stable
-
-# rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-#Bullet Train Config
-export BULLETTRAIN_STATUS_EXIT_SHOW=true
-export BULLETTRAIN_CONTEXT_SHOW=false
-export BULLETTRAIN_NVM_SHOW=true
-export BULLETTRAIN_DIR_EXTENDED=1 # Extended path (0=short path, 1=medium path, 2=complete path, everything else=medium path)
-export BULLETTRAIN_GIT_COLORIZE_DIRTY=false
-export BULLETTRAIN_GIT_UNTRACKED="%{$fg[magenta]%}✭"%{$reset_color%}
+# export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -103,20 +88,5 @@ export BULLETTRAIN_GIT_UNTRACKED="%{$fg[magenta]%}✭"%{$reset_color%}
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="vim ~/.zshrc"
-alias ohmyzsh="vim ~/.oh-my-zsh"
-alias reloadzsh="source ~/.zshrc"
-alias vimconfig="vim ~/.vimrc"
-alias git=hub
-
-
-# tabtab source for yo package
-# uninstall by removing these lines or running `tabtab uninstall yo`
-#[[ -f /Users/douglas/.nvm/versions/node/v6.1.0/lib/node_modules/yo/node_modules/tabtab/.completions/yo.zsh ]] && . /Users/douglas/.nvm/versions/node/v6.1.0/lib/node_modules/yo/node_modules/tabtab/.completions/yo.zsh
-
-export PATH="$PATH:$(brew --prefix coreutils)/libexec/gnubin"
-
-# jenv
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
-export PATH="/usr/local/sbin:$PATH"
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
