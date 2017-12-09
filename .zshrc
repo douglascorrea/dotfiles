@@ -92,3 +92,4 @@ export LANG=en_US.UTF-8
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias chromecors="open -a Google\ Chrome --args --disable-web-security --user-data-dir"
