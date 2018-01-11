@@ -28,3 +28,6 @@ set tabstop=8
 set softtabstop=0
 
 let mapleader = "\<Space>"
+
+set clipboard=unnamedplus
+
