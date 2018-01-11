@@ -27,7 +27,7 @@ set softtabstop=0
 
 "let g:solarized_termcolors=256
 " Color scheme for base16-eighties
-"let base16colorspace=256
+let base16colorspace=256
 set background=dark
 colorscheme base16-londontube
 
