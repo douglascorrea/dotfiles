@@ -92,4 +92,11 @@ export LANG=en_US.UTF-8
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias gettrx="node ~/sites/binance_sandbox/index.js TRX"
+alias getbtc="node ~/sites/binance_sandbox/index.js BTC"
+alias getiota="node ~/sites/binance_sandbox/index.js IOTA"
+alias getxvg="node ~/sites/binance_sandbox/index.js XVG"
+alias getxrp="node ~/sites/binance_sandbox/index.js XRP"
 alias chromecors="open -a Google\ Chrome --args --disable-web-security --user-data-dir"
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
