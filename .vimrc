@@ -1,7 +1,20 @@
 call plug#begin()
 Plug 'tpope/vim-sensible'
+Plug 'hzchirs/vim-material'
+Plug 'tpope/vim-commentary'
+Plug 'chriskempson/base16-vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'edkolev/tmuxline.vim'
 call plug#end()
-syntax on
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
+endif
+set background=dark
+set t_Co=256
+colorscheme base16-material
+syntax enable
 filetype plugin indent on
 highlight Pmenu ctermfg=2 ctermbg=3 guifg=#ffffff guibg=#000000
 
@@ -30,4 +43,6 @@ set softtabstop=0
 let mapleader = "\<Space>"
 
 set clipboard=unnamedplus
+
+let g:airline_powerline_fonts = 1
 
