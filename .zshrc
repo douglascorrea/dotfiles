@@ -100,3 +100,6 @@ alias getxrp="node ~/sites/binance_sandbox/index.js XRP"
 alias chromecors="open -a Google\ Chrome --args --disable-web-security --user-data-dir"
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
+
+BASE16_SHELL=$HOME/.config/base16-shell/
+[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
