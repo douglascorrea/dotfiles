@@ -6,6 +6,9 @@ Plug 'chriskempson/base16-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/tmuxline.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'w0rp/ale'
 call plug#end()
 if filereadable(expand("~/.vimrc_background"))
   let base16colorspace=256
@@ -45,4 +48,5 @@ let mapleader = "\<Space>"
 set clipboard=unnamedplus
 
 let g:airline_powerline_fonts = 1
-
+packloadall
+silent! helptags ALL
