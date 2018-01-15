@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/douglas/.oh-my-zsh
+export ZSH=/home/douglas/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -58,7 +58,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git zsh-nvm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -97,9 +97,12 @@ alias getbtc="node ~/sites/binance_sandbox/index.js BTC"
 alias getiota="node ~/sites/binance_sandbox/index.js IOTA"
 alias getxvg="node ~/sites/binance_sandbox/index.js XVG"
 alias getxrp="node ~/sites/binance_sandbox/index.js XRP"
+alias chromiumcors="nohup chromium-browser --disable-web-security --user-data-dir &"
 alias chromecors="open -a Google\ Chrome --args --disable-web-security --user-data-dir"
-export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
 
 BASE16_SHELL=$HOME/.config/base16-shell/
 [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
