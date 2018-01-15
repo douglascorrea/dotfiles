@@ -2,14 +2,14 @@
 brew install git
 cd ~/Sites
 git clone git@github.com:douglascorrea/til.git
-#git clone git@github.com:powerline/fonts.git
-#cd fonts
-#./install.sh
-#cd ..
-#git clone git@github.com:ryanoasis/nerd-fonts.git
-#cd nerd-fonts
-#./install.sh
-#cd ..
+git clone git@github.com:powerline/fonts.git
+cd fonts
+./install.sh
+cd ..
+git clone git@github.com:ryanoasis/nerd-fonts.git
+cd nerd-fonts
+./install.sh
+cd ..
 brew tap caskroom/cask
 brew tap homebrew/versions
 brew tap caskroom/versions
@@ -23,12 +23,12 @@ brew install cmake
 #brew install sfnt2woff
 #brew install sfnt2woff-zopfli
 #brew install woff2
-#brew cask install skyfonts
-#brew cask install font-input
-#brew cask install font-monoid
+brew cask install skyfonts
+brew cask install font-input
+brew cask install font-monoid
 brew cask install kindle
 #brew cask install selfcontrol
-brew install heroku
+#brew install heroku
 brew cask install virtualbox
 brew cask install spotify
 brew cask install sublime-text
@@ -37,22 +37,22 @@ brew cask install google-chrome
 #brew cask install google-chrome-canary
 brew cask install vlc
 #brew cask install rescuetime
-brew cask install limechat
+#brew cask install limechat
 #brew install mercurial
-brew install hub
+#brew install hub
 # Install more recent versions of some OS X tools.
 brew install vim --override-system-vi
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
-brew install homebrew/dupes/screen
+#brew install homebrew/dupes/screen
 #brew install homebrew/php/php56 --with-gmp
-brew install screenfetch
-brew install shellcheck
-brew install ctags
+#brew install screenfetch
+#brew install shellcheck
+#brew install ctags
 brew install wget
 brew cask install bartender
 brew cask install istat-menus
-brew cask install bitbar
+#brew cask install bitbar
 brew install tmux
 brew cask install skype
 brew cask install sketch
@@ -63,18 +63,18 @@ brew cask install dropbox
 brew cask install firefox
 #brew install rbenv
 brew install gpg
-gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
-curl -sSL https://get.rvm.io | bash -s stable
-brew install python
-pip install --upgrade pip
-brew install python3
-pip install virtualenv
-pip install virtualenvwrapper
+#gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+#curl -sSL https://get.rvm.io | bash -s stable
+#brew install python
+#pip install --upgrade pip
+#brew install python3
+#pip install virtualenv
+#pip install virtualenvwrapper
 brew install nvm
 mkdir ~/.nvm
-brew install postgres
-brew install mysql
-brew install jenv
+#brew install postgres
+#brew install mysql
+#brew install jenv
 brew cask install vmware-fusion
 brew cask install vmware-horizon-client
 brew cask install intellij-idea
@@ -95,14 +95,14 @@ brew install ack
 brew install exiv2
 brew install git-lfs
 brew install imagemagick --with-webp
-brew install lua
+#brew install lua
 brew install lynx
 brew install p7zip
 brew install pigz
 brew install pv
 brew install rename
 # brew install rhino
-#brew install speedtest_cli
+brew install speedtest_cli
 brew install ssh-copy-id
 #brew install testssl
 #brew install docker
@@ -114,9 +114,9 @@ brew install webkit2png
 brew install zopfli
 brew install the_silver_searcher
 brew install fzf
-rm -rf ~/.vimrc
-ln -s ~/Sites/dotfiles/.vimrc ~/.vimrc
-brew install emacs --with-cocoa --without-gnutls --with-librsvg --with-imagemagick --HEAD --use-git-head
+#rm -rf ~/.vimrc
+#ln -s ~/Sites/dotfiles/.vimrc ~/.vimrc
+#brew install emacs --with-cocoa --without-gnutls --with-librsvg --with-imagemagick --HEAD --use-git-head
 brew cleanup
 brew linkapps
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
