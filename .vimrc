@@ -1,8 +1,15 @@
 call plug#begin()
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 Plug 'roxma/nvim-yarp'
+Plug 'rbgrouleff/bclose.vim'
 Plug 'tpope/vim-sensible'
 Plug 'hzchirs/vim-material'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'airblade/vim-gitgutter'
+Plug 'raimondi/delimitmate'
 Plug 'mattn/emmet-vim'
 Plug 'chriskempson/base16-vim'
 Plug 'vim-airline/vim-airline'
@@ -70,6 +77,17 @@ let g:airline_powerline_fonts = 1
 
 " ctrlp
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+nmap <Leader>ff :CtrlP<CR>
+nmap <Leader>bb :CtrlPBuffer<CR>
+nmap <Leader>br :CtrlPMRU<CR>
+
+nmap <Leader>w <C-W>
+nmap <Leader>bd :Bclose<CR>
+
+nmap <Leader>fed :e ~/.vimrc<CR>
+nmap <Leader>feR :so ~/.vimrc<CR>
+
+nmap <Leader>sap :Ag 
 
 packloadall
 silent! helptags ALL
