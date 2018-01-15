@@ -1,0 +1,4 @@
+pane	0	1	:vim	1	:*	1	:/home/douglas	1	vim	:vim /home/douglas/.tmux.conf
+pane	0	1	:vim	1	:*	2	:/home/douglas/Sites/dotfiles/.tmux/plugins/tmux-mem-cpu-load	0	zsh	:
+window	0	1	1	:*	3ced,478x66,0,0{239x66,0,0,1,238x66,240,0,2}
+state	0	

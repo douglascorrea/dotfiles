@@ -1,12 +1,17 @@
 call plug#begin()
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'xolox/vim-misc'
+Plug 'tmux-plugins/vim-tmux-focus-events'
+Plug 'xolox/vim-easytags'
 Plug 'roxma/nvim-yarp'
+Plug 'tmux-plugins/vim-tmux'
 Plug 'rbgrouleff/bclose.vim'
 Plug 'tpope/vim-sensible'
 Plug 'hzchirs/vim-material'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-obsession'
 Plug 'tpope/vim-surround'
 Plug 'airblade/vim-gitgutter'
 Plug 'raimondi/delimitmate'
@@ -48,10 +53,10 @@ highlight Pmenu ctermbg=8 guibg=#606060
 highlight PmenuSel ctermbg=1 guifg=#dddd00 guibg=#1f82cd
 highlight PmenuSbar ctermbg=0 guibg=#d6d6d6
 
-
+set directory^=$HOME/.vim/tmp//
 "no wrap words
-"set nowrap
-"
+set nowrap
+
 ""Line Numbers
 set relativenumber number
 
@@ -74,6 +79,7 @@ set clipboard=unnamedplus
 set pyxversion=3
 let g:deoplete#enable_at_startup = 1
 let g:airline_powerline_fonts = 1
+
 
 " ctrlp
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
