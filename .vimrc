@@ -62,16 +62,11 @@ set relativenumber number
 
 "Tab configuration
 "
-"set expandtab
-""size of a hard tabstop
-set tabstop=8
-
+set expandtab
 " size of an "indent"
- set shiftwidth=2
-"
-" " a combination of spaces and tabs are used to simulate tab stops at a width
-" " other than the (hard)tabstop
-set softtabstop=0
+set shiftwidth=2
+""size of a hard tabstop
+set softtabstop=2
 
 let mapleader = "\<Space>"
 set encoding=utf-8
@@ -95,5 +90,6 @@ nmap <Leader>feR :so ~/.vimrc<CR>
 
 nmap <Leader>sap :Ag 
 
+map <Leader>= mzgg=G`z
 packloadall
 silent! helptags ALL
