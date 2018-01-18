@@ -1,11 +1,11 @@
 call plug#begin()
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --js-completer' }
+Plug 'Valloric/MatchTagAlways'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'xolox/vim-misc'
 Plug 'tmux-plugins/vim-tmux-focus-events'
 " Plug 'xolox/vim-easytags'
-Plug 'roxma/nvim-yarp'
 Plug 'tmux-plugins/vim-tmux'
 Plug 'rbgrouleff/bclose.vim'
 Plug 'tpope/vim-sensible'
@@ -69,7 +69,14 @@ let g:deoplete#enable_at_startup = 1
 let g:airline_powerline_fonts = 1
 
 let g:ycm_autoclose_preview_window_after_completion = 1
-
+let g:mta_filetypes = {
+    \ 'html' : 1,
+    \ 'xhtml' : 1,
+    \ 'xml' : 1,
+    \ 'jinja' : 1,
+    \ 'javascript.jsx': 1,
+    \ 'javascript' : 1,
+    \}
 " ctrlp
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 nmap <Leader>ff :CtrlP<CR>
