@@ -1,1 +1,3 @@
 tags
+*.swp
+.tern-port

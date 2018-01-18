@@ -1,9 +1,10 @@
 call plug#begin()
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --js-completer' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'xolox/vim-misc'
 Plug 'tmux-plugins/vim-tmux-focus-events'
-Plug 'xolox/vim-easytags'
+" Plug 'xolox/vim-easytags'
 Plug 'roxma/nvim-yarp'
 Plug 'tmux-plugins/vim-tmux'
 Plug 'rbgrouleff/bclose.vim'
@@ -26,14 +27,6 @@ Plug 'w0rp/ale'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ctrlpvim/ctrlp.vim'
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-  Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
-endif
 call plug#end()
 if filereadable(expand("~/.vimrc_background"))
   let base16colorspace=256
@@ -53,7 +46,7 @@ highlight Pmenu ctermbg=8 guibg=#606060
 highlight PmenuSel ctermbg=1 guifg=#dddd00 guibg=#1f82cd
 highlight PmenuSbar ctermbg=0 guibg=#d6d6d6
 
-set directory^=$HOME/.vim/tmp//
+set directory=$HOME/.vim/tmp//
 "no wrap words
 set nowrap
 
@@ -75,6 +68,7 @@ set pyxversion=3
 let g:deoplete#enable_at_startup = 1
 let g:airline_powerline_fonts = 1
 
+let g:ycm_autoclose_preview_window_after_completion = 1
 
 " ctrlp
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
