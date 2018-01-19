@@ -5,7 +5,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'xolox/vim-misc'
 Plug 'tmux-plugins/vim-tmux-focus-events'
-" Plug 'xolox/vim-easytags'
+Plug 'xolox/vim-easytags'
 Plug 'tmux-plugins/vim-tmux'
 Plug 'rbgrouleff/bclose.vim'
 Plug 'tpope/vim-sensible'
@@ -92,5 +92,7 @@ nmap <Leader>feR :so ~/.vimrc<CR>
 nmap <Leader>sap :Ag 
 
 map <Leader>= mzgg=G`z
+
+map <Leader>R :bufdo e!<CR>
 packloadall
 silent! helptags ALL
