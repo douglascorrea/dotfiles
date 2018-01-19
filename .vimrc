@@ -1,5 +1,5 @@
 call plug#begin()
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --js-completer' }
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --js-completer --rust-completer' }
 Plug 'Valloric/MatchTagAlways'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
