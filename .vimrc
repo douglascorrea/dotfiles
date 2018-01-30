@@ -8,6 +8,7 @@ Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'xolox/vim-easytags'
 Plug 'tmux-plugins/vim-tmux'
 Plug 'rbgrouleff/bclose.vim'
+Plug 'cespare/vim-toml'
 Plug 'tpope/vim-sensible'
 Plug 'hzchirs/vim-material'
 Plug 'tpope/vim-commentary'
@@ -27,6 +28,7 @@ Plug 'w0rp/ale'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'tomlion/vim-solidity'
 call plug#end()
 if filereadable(expand("~/.vimrc_background"))
   let base16colorspace=256
@@ -63,7 +65,7 @@ set softtabstop=2
 
 let mapleader = "\<Space>"
 set encoding=utf-8
-set clipboard=unnamedplus
+set clipboard=unnamed
 set pyxversion=3
 let g:deoplete#enable_at_startup = 1
 let g:airline_powerline_fonts = 1
@@ -89,10 +91,18 @@ nmap <Leader>bd :Bclose<CR>
 nmap <Leader>fed :e ~/.vimrc<CR>
 nmap <Leader>feR :so ~/.vimrc<CR>
 
+nmap <Leader>ft :NERDTreeToggle<CR>
+
 nmap <Leader>sap :Ag 
 
 map <Leader>= mzgg=G`z
 
 map <Leader>R :bufdo e!<CR>
+
+autocmd BufRead *.rs :setlocal tags=./rusty-tags.vi;/
+autocmd BufWritePost *.rs :silent! exec "!rusty-tags vi --quiet --start-dir=" . expand('%:p:h') . "&" | redraw!
+
+let NERDTreeShowHidden = 1
+
 packloadall
 silent! helptags ALL
