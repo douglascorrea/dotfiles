@@ -27,6 +27,7 @@ Plug 'w0rp/ale'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'tpope/vim-rhubarb'
 call plug#end()
 if filereadable(expand("~/.vimrc_background"))
   let base16colorspace=256
@@ -82,6 +83,7 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 nmap <Leader>ff :CtrlP<CR>
 nmap <Leader>bb :CtrlPBuffer<CR>
 nmap <Leader>br :CtrlPMRU<CR>
+nmap <Leader>fc :CtrlPClearCache<CR>
 
 nmap <Leader>w <C-W>
 nmap <Leader>bd :Bclose<CR>
@@ -94,5 +96,11 @@ nmap <Leader>sap :Ag
 map <Leader>= mzgg=G`z
 
 map <Leader>R :bufdo e!<CR>
+
+map <Leader>bcn :echo @%<CR>
+
+"https://github.com/webpack/webpack/issues/781
+set backupcopy=yes
+
 packloadall
 silent! helptags ALL
