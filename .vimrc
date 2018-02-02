@@ -93,7 +93,7 @@ nmap <Leader>bd :Bclose<CR>
 nmap <Leader>fed :e ~/.vimrc<CR>
 nmap <Leader>feR :so ~/.vimrc<CR>
 
-nmap <Leader>ft :NERDTreeToggle<CR>
+nmap <Leader>ft :NERDTreeFind<CR>
 
 nmap <Leader>sap :Ag 
 
