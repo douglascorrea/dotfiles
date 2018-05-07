@@ -30,6 +30,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-rhubarb'
 Plug 'tomlion/vim-solidity'
+Plug 'vim-scripts/closetag.vim'
 call plug#end()
 if filereadable(expand("~/.vimrc_background"))
   let base16colorspace=256
@@ -98,6 +99,7 @@ nmap <Leader>ft :NERDTreeFind<CR>
 nmap <Leader>sap :Ag 
 
 map <Leader>= mzgg=G`z
+map <Leader>m= :ALEFix<CR>
 
 map <Leader>R :bufdo e!<CR>
 
@@ -109,6 +111,12 @@ autocmd BufRead *.rs :setlocal tags=./rusty-tags.vi;/
 autocmd BufWritePost *.rs :silent! exec "!rusty-tags vi --quiet --start-dir=" . expand('%:p:h') . "&" | redraw!
 
 let NERDTreeShowHidden = 1
+
+let g:ale_javascript_prettier_options = '--single-quote --trailing-comma es5'
+let g:ale_fixers = {}
+let g:ale_fixers['javascript'] = ['prettier']
+
+" set cc=100;
 
 packloadall
 silent! helptags ALL
