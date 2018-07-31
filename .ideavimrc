@@ -19,7 +19,7 @@ nnoremap <leader>wl :action VimWindowRight<CR>
 nnoremap <leader>wh :action VimWindowLeft<CR>
 nnoremap <leader>ff :action GotoFile<CR>
 nnoremap <leader>fl :action MoveEditorToOppositeTabGroup<CR>
-nnoremap <leader>bb :action RecentFiles<CR>
+nnoremap <leader>br :action RecentFiles<CR>
 nnoremap <leader>bd :action CloseContent<CR>
 nnoremap <leader>gb :action Vcs.Show.Log<CR>
 

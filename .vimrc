@@ -5,7 +5,6 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'xolox/vim-misc'
 Plug 'tmux-plugins/vim-tmux-focus-events'
-Plug 'xolox/vim-easytags'
 Plug 'tmux-plugins/vim-tmux'
 Plug 'rbgrouleff/bclose.vim'
 Plug 'cespare/vim-toml'
@@ -31,6 +30,9 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-rhubarb'
 Plug 'tomlion/vim-solidity'
 Plug 'vim-scripts/closetag.vim'
+Plug 'rust-lang/rust.vim'
+Plug 'racer-rust/vim-racer'
+Plug 'majutsushi/tagbar'
 call plug#end()
 if filereadable(expand("~/.vimrc_background"))
   let base16colorspace=256
@@ -105,10 +107,23 @@ map <Leader>R :bufdo e!<CR>
 
 map <Leader>bcn :echo @%<CR>
 
+
+set hidden
+let g:racer_cmd = "/Users/douglas/.cargo/bin/racer"
+let g:racer_experimental_completer = 1
+au FileType rust nmap gd <Plug>(rust-def)
+au FileType rust nmap gs <Plug>(rust-def-split)
+au FileType rust nmap gx <Plug>(rust-def-vertical)
+au FileType rust nmap <leader>gd <Plug>(rust-doc)
+hi SpellCap term=reverse cterm=undercurl ctermbg=8 gui=undercurl guisp=#82AAFF
+
+
+
 "https://github.com/webpack/webpack/issues/781
 set backupcopy=yes
-autocmd BufRead *.rs :setlocal tags=./rusty-tags.vi;/
-autocmd BufWritePost *.rs :silent! exec "!rusty-tags vi --quiet --start-dir=" . expand('%:p:h') . "&" | redraw!
+" autocmd BufRead *.rs :setlocal tags=./rusty-tags.vi;/,$RUST_SRC_PATH/rusty-tags.vi
+" autocmd BufWritePost *.rs :silent! exec "!rusty-tags vi --quiet --start-dir=" . expand('%:p:h') . "&" | redraw!
+let g:rustfmt_autosave = 1
 
 let NERDTreeShowHidden = 1
 
