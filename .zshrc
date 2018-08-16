@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/douglas/.oh-my-zsh
+export ZSH=/home/douglas/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -97,7 +97,7 @@ alias getbtc="node ~/sites/binance_sandbox/index.js BTC"
 alias getiota="node ~/sites/binance_sandbox/index.js IOTA"
 alias getxvg="node ~/sites/binance_sandbox/index.js XVG"
 alias getxrp="node ~/sites/binance_sandbox/index.js XRP"
-alias chromiumcors="nohup chromium-browser --disable-web-security --user-data-dir &"
+alias chromiumcors="nohup chromium --disable-web-security --user-data-dir &"
 alias chromecors="open -a Google\ Chrome --args --disable-web-security --user-data-dir"
 
 BASE16_SHELL=$HOME/.config/base16-shell/

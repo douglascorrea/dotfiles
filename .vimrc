@@ -69,7 +69,8 @@ set softtabstop=2
 
 let mapleader = "\<Space>"
 set encoding=utf-8
-set clipboard=unnamed
+set clipboard=unnamedplus
+nmap <Leader>fcc :let @+ = expand("%")<CR>
 set pyxversion=3
 let g:deoplete#enable_at_startup = 1
 let g:airline_powerline_fonts = 1
@@ -105,7 +106,8 @@ map <Leader>m= :ALEFix<CR>
 
 map <Leader>R :bufdo e!<CR>
 
-map <Leader>bcn :echo @%<CR>
+map <Leader>fcn :echo @%<CR>
+map <Leader>fcs :w<CR>
 
 
 set hidden
