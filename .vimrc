@@ -32,7 +32,7 @@ Plug 'tomlion/vim-solidity'
 Plug 'vim-scripts/closetag.vim'
 Plug 'rust-lang/rust.vim'
 Plug 'racer-rust/vim-racer'
-Plug 'majutsushi/tagbar'
+" Plug 'majutsushi/tagbar'
 call plug#end()
 if filereadable(expand("~/.vimrc_background"))
   let base16colorspace=256

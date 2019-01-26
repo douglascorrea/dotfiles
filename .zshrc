@@ -92,13 +92,13 @@ export EDITOR='vim'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias gettrx="node ~/sites/binance_sandbox/index.js TRX"
-alias getbtc="node ~/sites/binance_sandbox/index.js BTC"
-alias getiota="node ~/sites/binance_sandbox/index.js IOTA"
-alias getxvg="node ~/sites/binance_sandbox/index.js XVG"
-alias getxrp="node ~/sites/binance_sandbox/index.js XRP"
-alias chromiumcors="nohup chromium --disable-web-security --user-data-dir &"
-alias chromecors="open -a Google\ Chrome --args --disable-web-security --user-data-dir"
+# alias gettrx="node ~/sites/binance_sandbox/index.js TRX"
+# alias getbtc="node ~/sites/binance_sandbox/index.js BTC"
+# alias getiota="node ~/sites/binance_sandbox/index.js IOTA"
+# alias getxvg="node ~/sites/binance_sandbox/index.js XVG"
+# alias getxrp="node ~/sites/binance_sandbox/index.js XRP"
+# alias chromiumcors="nohup chromium --disable-web-security --user-data-dir &"
+alias chromecors="google-chrome-beta --args --disable-web-security --user-data-dir &>nohup &"
 
 BASE16_SHELL=$HOME/.config/base16-shell/
 [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
