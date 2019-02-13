@@ -32,7 +32,7 @@ Plug 'tomlion/vim-solidity'
 Plug 'vim-scripts/closetag.vim'
 Plug 'rust-lang/rust.vim'
 Plug 'racer-rust/vim-racer'
-" Plug 'majutsushi/tagbar'
+Plug 'majutsushi/tagbar'
 call plug#end()
 if filereadable(expand("~/.vimrc_background"))
   let base16colorspace=256
@@ -40,7 +40,6 @@ if filereadable(expand("~/.vimrc_background"))
 endif
 set background=dark
 set t_Co=256
-colorscheme base16-material-darker
 syntax enable
 filetype plugin indent on
 highlight Pmenu ctermfg=2 ctermbg=3 guifg=#ffffff guibg=#000000
@@ -102,7 +101,7 @@ nmap <Leader>ft :NERDTreeFind<CR>
 nmap <Leader>sap :Ag 
 
 map <Leader>= mzgg=G`z
-map <Leader>m= :ALEFix<CR>
+map <Leader>p :ALEFix<CR>
 
 map <Leader>R :bufdo e!<CR>
 
@@ -111,7 +110,7 @@ map <Leader>fcs :w<CR>
 
 
 set hidden
-let g:racer_cmd = "/Users/douglas/.cargo/bin/racer"
+let g:racer_cmd = "/home/douglas/.cargo/bin/racer"
 let g:racer_experimental_completer = 1
 au FileType rust nmap gd <Plug>(rust-def)
 au FileType rust nmap gs <Plug>(rust-def-split)
@@ -132,6 +131,11 @@ let NERDTreeShowHidden = 1
 let g:ale_javascript_prettier_options = '--single-quote --trailing-comma es5'
 let g:ale_fixers = {}
 let g:ale_fixers['javascript'] = ['prettier']
+let g:ale_fixers['rust'] = ['rustfmt']
+let g:ale_rust_cargo_use_check = 1
+let g:ale_rust_cargo_use_clippy = 1
+let g:ale_rust_rls_toolchain = 'stable'
+let g:ale_rust_cargo_check_tests = 1
 
 " set cc=100;
 
@@ -164,7 +168,7 @@ function! DoPrettyXML()
   " restore the filetype
   exe "set ft=" . l:origft
 endfunction
-command! PrettyXML call DoPrettyXML()
+
 
 
 
