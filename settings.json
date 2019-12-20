@@ -1,3 +1,4 @@
+
 {
   "vim.easymotion": true,
   "vim.sneak": true,
@@ -9,81 +10,179 @@
   "vim.surround": true,
   "vim.insertModeKeyBindings": [
     {
-      "before": ["j", "j"],
-      "after": ["<Esc>"]
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["<leader>", "d"],
-      "after": ["d", "d"]
-    },
-    {
-      "before": ["<leader>", "d"],
-      "after": ["d", "d"]
-    },
-    {
-      "before": ["<leader>", "w", "v"],
-      "after": ["<C-w>", "v"]
-    },
-    {
-      "before": ["<leader>", "w", "h"],
-      "after": ["<C-w>", "h"]
-    },
-    {
-      "before": ["<leader>", "w", "l"],
-      "after": ["<C-w>", "l"]
-    },
-    {
-      "before": ["<C-n>"],
-      "commands": [":nohl"]
-    },
-    {
-      "before": ["<leader>", "f", "t"],
-      "commands": [
-        "workbench.action.toggleSidebarVisibility",
+      "before": [
+        "<leader>",
+        "d"
+      ],
+      "after": [
+        "d",
+        "d"
       ]
     },
     {
-      "before": ["<leader>", "b", "b"],
-      "commands": [
-        "workbench.action.showAllEditors",
+      "before": [
+        "<leader>",
+        "d"
+      ],
+      "after": [
+        "d",
+        "d"
       ]
     },
     {
-      "before": ["<leader>", "b", "d"],
+      "before": [
+        "<leader>",
+        "w",
+        "v"
+      ],
+      "after": [
+        "<C-w>",
+        "v"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "w",
+        "h"
+      ],
+      "after": [
+        "<C-w>",
+        "h"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "w",
+        "l"
+      ],
+      "after": [
+        "<C-w>",
+        "l"
+      ]
+    },
+    {
+      "before": [
+        "<C-n>"
+      ],
+      "commands": [
+        ":nohl"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "t"
+      ],
+      "commands": [
+        "workbench.view.explorer",
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "f"
+      ],
+      "commands": [
+        "workbench.action.quickOpen",
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "b",
+        "d"
+      ],
       "commands": [
         "workbench.action.closeActiveEditor",
       ]
     },
     {
-      "before": ["<leader>", "f", "f"],
+      "before": [
+        "<leader>",
+        "b",
+        "b"
+      ],
       "commands": [
         "workbench.action.showAllEditors",
       ]
     },
     {
-      "before": ["<leader>", "f", "e", "R"],
+      "before": [
+        "<leader>",
+        "f",
+        "e",
+        "R"
+      ],
       "commands": [
         "workbench.action.reloadWindow",
       ]
     },
     {
-      "before": ["<leader>", "f", "e", "d"],
+      "before": [
+        "<leader>",
+        "f",
+        "e",
+        "d"
+      ],
       "commands": [
         "workbench.action.openSettingsJson",
       ]
     },
     {
-      "before": ["<leader>", "f", "e", "k"],
+      "before": [
+        "<leader>",
+        "s",
+        "a",
+        "p"
+      ],
+      "commands": [
+        "workbench.action.findInFiles"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "e",
+        "k"
+      ],
       "commands": [
         "workbench.action.openDefaultKeybindingsFile",
       ]
     },
     {
-      "before": ["<leader>", "f", "e", "e"],
+      "before": [
+        "<leader>",
+        "f",
+        "e",
+        "e"
+      ],
       "commands": [
         "workbench.action.openRawDefaultSettings",
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "=",
+      ],
+      "commands": [
+        "editor.action.formatDocument",
       ]
     },
   ],
@@ -91,17 +190,34 @@
   "vim.handleKeys": {
     "<C-a>": false,
   },
-  "vim.statusBarColorControl": true,
-  "vim.statusBarColors.normal": ["#8FBCBB", "#434C5E"],
-  "vim.statusBarColors.insert": "#BF616A",
-  "vim.statusBarColors.visual": "#B48EAD",
-  "vim.statusBarColors.visualline": "#B48EAD",
-  "vim.statusBarColors.visualblock": "#A3BE8C",
-  "vim.statusBarColors.replace": "#D08770",
-  "workbench.colorCustomizations": {
-    "statusBar.background": "#8FBCBB",
-    "statusBar.noFolderBackground": "#8FBCBB",
-    "statusBar.debuggingBackground": "#8FBCBB",
-    "statusBar.foreground": "#434C5E"
-  }
+  // "vim.statusBarColorControl": true,
+  // "vim.statusBarColors.normal": ["#8FBCBB", "#434C5E"],
+  // "vim.statusBarColors.insert": "#BF616A",
+  // "vim.statusBarColors.visual": "#B48EAD",
+  // "vim.statusBarColors.visualline": "#B48EAD",
+  // "vim.statusBarColors.visualblock": "#A3BE8C",
+  // "vim.statusBarColors.replace": "#D08770",
+  // "vim.statusBarColors.searchinprogressmode": "#007acc",
+  // "workbench.colorCustomizations": {
+  //   "statusBar.background": "#B48EAD",
+  //   "statusBar.noFolderBackground": "#B48EAD",
+  //   "statusBar.debuggingBackground": "#B48EAD"
+  // },
+  "workbench.colorTheme": "Material Theme",
+  "editor.fontFamily": "Fira Code Retina",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+  "php-cs-fixer.lastDownload": 1576866213776,
+  "[javascript]": {
+    "[javascript]": {
+      "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "editor.minimap.enabled": false,
+  "eslint.workingDirectories": [
+    "./assets"
+  ],
+  "eslint.format.enable": true
 }
