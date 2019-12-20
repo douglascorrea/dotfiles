@@ -58,8 +58,13 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-nvm)
-
+plugins=(
+git
+zsh-nvm
+zsh-autosuggestions
+zsh-syntax-highlighting
+)
+ZSH_DISABLE_COMPFIX=true
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -98,7 +103,7 @@ export EDITOR='vim'
 # alias getxvg="node ~/sites/binance_sandbox/index.js XVG"
 # alias getxrp="node ~/sites/binance_sandbox/index.js XRP"
 # alias chromiumcors="nohup chromium --disable-web-security --user-data-dir &"
-alias chromecors="google-chrome-beta --args --disable-web-security --user-data-dir &>nohup &"
+#alias chromecors="google-chrome-beta --args --disable-web-security --user-data-dir &>nohup &"
 
 BASE16_SHELL=$HOME/.config/base16-shell/
 [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
