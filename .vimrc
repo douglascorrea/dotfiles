@@ -33,6 +33,8 @@ Plug 'vim-scripts/closetag.vim'
 Plug 'rust-lang/rust.vim'
 Plug 'racer-rust/vim-racer'
 Plug 'majutsushi/tagbar'
+Plug 'elixir-editors/vim-elixir'
+Plug 'mhinz/vim-mix-format'
 call plug#end()
 if filereadable(expand("~/.vimrc_background"))
   let base16colorspace=256
@@ -68,7 +70,7 @@ set softtabstop=2
 
 let mapleader = "\<Space>"
 set encoding=utf-8
-set clipboard=unnamedplus
+" set clipboard=unnamedplus
 nmap <Leader>fcc :let @+ = expand("%")<CR>
 set pyxversion=3
 let g:deoplete#enable_at_startup = 1
@@ -107,6 +109,8 @@ map <Leader>R :bufdo e!<CR>
 
 map <Leader>fcn :echo @%<CR>
 map <Leader>fcs :w<CR>
+map <Leader>wp :r !powershell.exe -Command Get-Clipboard<CR>
+
 
 
 set hidden
@@ -169,8 +173,15 @@ function! DoPrettyXML()
   exe "set ft=" . l:origft
 endfunction
 
-
-
+  
+ 
+let s:clip = '/mnt/c/Windows/System32/clip.exe' 
+if executable(s:clip)
+  augroup WSLYank
+    autocmd!
+    autocmd TextYankPost * call system('echo '.shellescape(join(v:event.regcontents, "\<CR>")).' | '.s:clip)
+  augroup END
+end
 
 packloadall
 silent! helptags ALL
