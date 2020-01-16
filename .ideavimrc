@@ -1,5 +1,7 @@
 set surround
-set clipboard=unnamedplus
+set clipboard+=ideaput
+set visualbell
+set noerrorbells
 nnoremap yy "+yy
 vnoremap y "+y
 
@@ -13,15 +15,12 @@ let mapleader = " "
 nnoremap <leader>fed :e /Users/douglas/.ideavimrc<CR>
 nnoremap <leader>feR :source /Users/douglas/.ideavimrc<CR>
 nnoremap <leader>sap :action FindModal<CR>
-nnoremap <leader>wv :action VimWindowSplitVertical<CR>
-nnoremap <leader>wd :action Unsplit<CR>
-nnoremap <leader>wl :action VimWindowRight<CR>
-nnoremap <leader>wh :action VimWindowLeft<CR>
+nnoremap <leader>w <C-W>
 nnoremap <leader>ff :action GotoFile<CR>
 nnoremap <leader>fl :action MoveEditorToOppositeTabGroup<CR>
 nnoremap <leader>br :action RecentFiles<CR>
 nnoremap <leader>bd :action CloseContent<CR>
 nnoremap <leader>gb :action Vcs.Show.Log<CR>
-
-
-
+vnoremap gc :action CommentByLineComment<CR>
+nnoremap <leader>= :action ReformatWithPrettierAction<CR>:action Javascript.Linters.EsLint.Fix<CR>
+nnoremap <leader>p :action ReformatWithPrettierAction<CR>:action Javascript.Linters.EsLint.Fix<CR>
