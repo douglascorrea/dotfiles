@@ -119,3 +119,11 @@ export RUST_SRC_PATH=$(rustc --print sysroot)/lib/rustlib/src/rust/src/
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+export PATH="$PATH:/Users/douglas/flutter/bin"
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
+export PATH="/usr/local/opt/python@3.8/bin:$PATH"
+export PATH="/Users/douglas/Library/Python/3.8/bin:$PATH"
+export PATH="/Users/douglas/.composer/vendor/bin:$PATH"
+export GOPATH=/Users/douglas/go
+export PATH="$GOPATH/bin:$PATH"

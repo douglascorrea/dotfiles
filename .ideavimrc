@@ -1,14 +1,16 @@
 set surround
-set clipboard+=ideaput
+set clipboard+=unnamedplus
 set visualbell
 set noerrorbells
-nnoremap yy "+yy
-vnoremap y "+y
+set commentary
+set multiple-cursors
+"nnoremap yy "+yy
+"vnoremap y "+y
 
-nnoremap p "+p
-vnoremap p "+p
-nnoremap P "+P
-vnoremap P "+P
+"nnoremap p "+p
+"vnoremap p "+p
+"nnoremap P "+P
+"vnoremap P "+P
 
 let mapleader = " "
 

@@ -59,6 +59,7 @@ set nowrap
 
 ""Line Numbers
 set relativenumber number
+highlight LineNr ctermfg=grey
 
 "Tab configuration
 "
