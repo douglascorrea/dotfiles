@@ -127,3 +127,5 @@ export PATH="/Users/douglas/Library/Python/3.8/bin:$PATH"
 export PATH="/Users/douglas/.composer/vendor/bin:$PATH"
 export GOPATH=/Users/douglas/go
 export PATH="$GOPATH/bin:$PATH"
+export PATH="/usr/local/opt/python@3.8/bin:$PATH"
+export PATH="/usr/local/opt/vim/bin:$PATH"
