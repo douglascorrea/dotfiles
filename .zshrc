@@ -129,3 +129,8 @@ export GOPATH=/Users/douglas/go
 export PATH="$GOPATH/bin:$PATH"
 export PATH="/usr/local/opt/python@3.8/bin:$PATH"
 export PATH="/usr/local/opt/vim/bin:$PATH"
+export PATH="/Users/douglas/flutter/bin:$PATH"
+
+
+# alias pip="pip3"
+# alias python="python3"

@@ -75,6 +75,15 @@
     },
     {
       "before": [
+        "<leader>",
+        "q",
+      ],
+      "commands": [
+        "workbench.action.terminal.toggleTerminal",
+      ]
+    },
+    {
+      "before": [
         "<C-n>"
       ],
       "commands": [
@@ -203,21 +212,18 @@
   //   "statusBar.noFolderBackground": "#B48EAD",
   //   "statusBar.debuggingBackground": "#B48EAD"
   // },
-  "workbench.colorTheme": "Material Theme",
-  "editor.fontFamily": "Fira Code Retina",
+  "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
-  "php-cs-fixer.lastDownload": 1576866213776,
+  "php-cs-fixer.lastDownload": 1592432653279,
   "[javascript]": {
-    "[javascript]": {
-      "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-    },
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "editor.minimap.enabled": false,
   "eslint.workingDirectories": [
     "./assets"
   ],
-  "eslint.format.enable": true
+  "eslint.format.enable": true,
+  "workbench.colorCustomizations": {},
 }

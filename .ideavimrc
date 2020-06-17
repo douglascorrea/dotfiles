@@ -19,10 +19,11 @@ nnoremap <leader>feR :source /Users/douglas/.ideavimrc<CR>
 nnoremap <leader>sap :action FindModal<CR>
 nnoremap <leader>w <C-W>
 nnoremap <leader>ff :action GotoFile<CR>
+nnoremap <leader>fn :action NewFile<CR>
 nnoremap <leader>fl :action MoveEditorToOppositeTabGroup<CR>
 nnoremap <leader>br :action RecentFiles<CR>
 nnoremap <leader>bd :action CloseContent<CR>
 nnoremap <leader>gb :action Vcs.Show.Log<CR>
 vnoremap gc :action CommentByLineComment<CR>
-nnoremap <leader>= :action ReformatWithPrettierAction<CR>:action Javascript.Linters.EsLint.Fix<CR>
+nnoremap <leader>= :action ReformatCode<CR>
 nnoremap <leader>p :action ReformatWithPrettierAction<CR>:action Javascript.Linters.EsLint.Fix<CR>
