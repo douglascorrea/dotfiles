@@ -1,10 +1,14 @@
-
 // Place your key bindings in this file to override the defaults
 [
     {
-        "key": "Escape",
-        "command": "workbench.action.terminal.toggleTerminal",
+        "key": "ctrl+space k",
+        "command": "workbench.action.focusActiveEditorGroup",
         "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+space j",
+        "command": "workbench.action.terminal.toggleTerminal",
+        // "when": "terminalFocus"
     },
     // { "key": "ctrl+k q",          "command": "workbench.action.quickOpenNavigatePreviousInFilePicker",
     //                                      "when": "inFilesPicker && inQuickOpen" },
@@ -33,6 +37,46 @@
     {
         "key": "ctrl+shift+a",
         "command": "workbench.action.toggleMaximizedPanel",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+space h",
+        "command": "workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+space l",
+        "command": "workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+space w",
+        "command": "workbench.action.terminal.split",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+space d",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+space shift+j",
+        "command": "workbench.action.terminal.resizePaneDown",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+space shift+h",
+        "command": "workbench.action.terminal.resizePaneLeft",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+space shift+l",
+        "command": "workbench.action.terminal.resizePaneRight",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+space shift+k",
+        "command": "workbench.action.terminal.resizePaneUp",
         "when": "terminalFocus"
     },
 ]
