@@ -1,4 +1,3 @@
-
 {
   "vim.easymotion": true,
   "vim.sneak": true,
@@ -139,6 +138,17 @@
       ],
       "commands": [
         "workbench.action.reloadWindow",
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "e",
+        "s"
+      ],
+      "commands": [
+        "workbench.action.openGlobalKeybindingsFile"
       ]
     },
     {
