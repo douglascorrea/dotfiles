@@ -104,6 +104,12 @@ export EDITOR='vim'
 # alias getxrp="node ~/sites/binance_sandbox/index.js XRP"
 # alias chromiumcors="nohup chromium --disable-web-security --user-data-dir &"
 #alias chromecors="google-chrome-beta --args --disable-web-security --user-data-dir &>nohup &"
+# if type brew &>/dev/null; then
+#   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+
+#   autoload -Uz compinit
+#   compinit
+# fi
 
 BASE16_SHELL=$HOME/.config/base16-shell/
 [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
@@ -130,6 +136,7 @@ export PATH="$GOPATH/bin:$PATH"
 export PATH="/usr/local/opt/python@3.8/bin:$PATH"
 export PATH="/usr/local/opt/vim/bin:$PATH"
 export PATH="/Users/douglas/flutter/bin:$PATH"
+. $(brew --prefix asdf)/asdf.sh
 
 
 # alias pip="pip3"

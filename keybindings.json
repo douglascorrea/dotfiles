@@ -50,7 +50,7 @@
         "when": "terminalFocus"
     },
     {
-        "key": "ctrl+space w",
+        "key": "ctrl+space shift+\\",
         "command": "workbench.action.terminal.split",
         "when": "terminalFocus"
     },
@@ -78,5 +78,15 @@
         "key": "ctrl+space shift+k",
         "command": "workbench.action.terminal.resizePaneUp",
         "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "explorer.newFile",
+        "when": "explorerViewletFocus"
+    },
+    {
+        "key": "ctrl+shift+n",
+        "command": "explorer.newFolder",
+        "when": "explorerViewletFocus"
     },
 ]

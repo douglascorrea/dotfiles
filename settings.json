@@ -204,24 +204,31 @@
         "editor.action.formatDocument",
       ]
     },
+    {
+      "before": [
+        "<leader>",
+        "i",
+        "i",
+      ],
+      "commands": [
+        "editor.action.showHover",
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "i",
+        "f",
+      ],
+      "commands": [
+        "editor.action.quickFix",
+      ]
+    },
   ],
   "vim.leader": "<space>",
   "vim.handleKeys": {
     "<C-a>": false,
   },
-  // "vim.statusBarColorControl": true,
-  // "vim.statusBarColors.normal": ["#8FBCBB", "#434C5E"],
-  // "vim.statusBarColors.insert": "#BF616A",
-  // "vim.statusBarColors.visual": "#B48EAD",
-  // "vim.statusBarColors.visualline": "#B48EAD",
-  // "vim.statusBarColors.visualblock": "#A3BE8C",
-  // "vim.statusBarColors.replace": "#D08770",
-  // "vim.statusBarColors.searchinprogressmode": "#007acc",
-  // "workbench.colorCustomizations": {
-  //   "statusBar.background": "#B48EAD",
-  //   "statusBar.noFolderBackground": "#B48EAD",
-  //   "statusBar.debuggingBackground": "#B48EAD"
-  // },
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "editor.fontSize": 15,
@@ -231,12 +238,43 @@
   "[javascript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
-  "editor.minimap.enabled": false,
+  "[html-eex]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "tailwindCSS.emmetCompletions": true,
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
   // "eslint.workingDirectories": [
-  //   "./assets"
+  //   "pages"
   // ],
+  "emmet.includeLanguages": {
+    "html-eex": "html",
+    "javascript": "javascriptreact",
+  },
+  "editor.minimap.enabled": false,
   "eslint.format.enable": true,
   "workbench.colorCustomizations": {},
-  "window.zoomLevel": 0.30,
-	"editor.rulers": [80, 120],
+  "window.zoomLevel": 2,
+  "editor.rulers": [
+    80,
+    120
+  ],
+  "beautify.language": {
+    "js": {
+      "type": [
+        "json",
+      ],
+      "filename": [
+        ".jshintrc",
+        ".jsbeautifyrc"
+      ]
+    },
+    "css": [
+    ],
+    "html": [
+      "htm",
+      "html",
+      "html-eex"
+    ]
+  },
 }
