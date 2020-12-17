@@ -123,20 +123,20 @@ export RUST_SRC_PATH=$(rustc --print sysroot)/lib/rustlib/src/rust/src/
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-export PATH="/usr/local/sbin:$PATH"
-export PATH="$PATH:/Users/douglas/flutter/bin"
-export PATH="/usr/local/opt/openjdk/bin:$PATH"
-export PATH="/usr/local/opt/python@3.8/bin:$PATH"
-export PATH="/Users/douglas/Library/Python/3.8/bin:$PATH"
-export PATH="/Users/douglas/.composer/vendor/bin:$PATH"
-export GOPATH=/Users/douglas/go
-export PATH="$GOPATH/bin:$PATH"
-export PATH="/usr/local/opt/python@3.8/bin:$PATH"
-export PATH="/usr/local/opt/vim/bin:$PATH"
-export PATH="/Users/douglas/flutter/bin:$PATH"
-. $(brew --prefix asdf)/asdf.sh
+#export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/gcurl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | shlobal/node_modules/.bin:$PATH"
+#export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+#export PATH="/usr/local/sbin:$PATH"
+#export PATH="$PATH:/Users/douglas/flutter/bin"
+#export PATH="/usr/local/opt/openjdk/bin:$PATH"
+#export PATH="/usr/local/opt/python@3.8/bin:$PATH"
+#export PATH="/Users/douglas/Library/Python/3.8/bin:$PATH"
+#export PATH="/Users/douglas/.composer/vendor/bin:$PATH"
+#export GOPATH=/Users/douglas/go
+#export PATH="$GOPATH/bin:$PATH"
+#export PATH="/usr/local/opt/python@3.8/bin:$PATH"
+#export PATH="/usr/local/opt/vim/bin:$PATH"
+#export PATH="/Users/douglas/flutter/bin:$PATH"
+#. $(brew --prefix asdf)/asdf.sh
 
 
 # alias pip="pip3"
