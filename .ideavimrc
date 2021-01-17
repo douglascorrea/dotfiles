@@ -27,3 +27,4 @@ nnoremap <leader>gb :action Vcs.Show.Log<CR>
 vnoremap gc :action CommentByLineComment<CR>
 nnoremap <leader>= :action ReformatCode<CR>
 nnoremap <leader>p :action ReformatWithPrettierAction<CR>:action Javascript.Linters.EsLint.Fix<CR>
+nnoremap <leader>ft :action ActivateProjectToolWindow<CR>
